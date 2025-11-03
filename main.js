@@ -91,3 +91,34 @@ window.addEventListener("DOMContentLoaded", () => {
     applyTheme(isLight ? "dark" : "light");
   });
 });
+
+/* typewriter effect */
+const jobElement = document.querySelector('.home-job');
+const text = "Soy Desarrolladora Web";
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        jobElement.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100); 
+    }
+}
+
+jobElement.innerHTML = '';
+typeWriter();
+
+/* scroll reveal */
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-show');
+            observer.unobserve(entry.target); 
+        }
+    });
+}, { threshold: 0.2 }); 
+
+document.querySelectorAll('.reveal-hidden').forEach(el => observer.observe(el));
+
+

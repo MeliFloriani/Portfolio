@@ -10,6 +10,8 @@
         <!-- css --> 
          <link rel="stylesheet" href="styles.css"> 
 
+         <link rel="icon" type="icon" href="img/logo.png">
+
          <title>Melina Floriani</title> 
     </head> 
     <body> 
@@ -18,7 +20,7 @@
 
          <header class="header"> 
             <nav class="nav container"> 
-                <a href="#" class="nav-logo">MF</a> 
+                <a href="#" class="nav-logo">{MF}</a> 
                 <div class="nav-menu" id="nav-menu"> 
                     <ul class="nav-list"> 
 
@@ -46,11 +48,11 @@
         <section class="home section" > 
             <div class="home-container container grid"> 
                 <div class="home-data"> 
-                    <h1 class="home-title">Melina Floriani</h1> 
+                    <h1 class="home-title reveal-hidden">Melina Floriani</h1> 
                     <h3 class="home-job">Soy Desarrolladora Web</h3> 
-                    <p class="home-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velitm corrupti nt accusamus, facilis ipsum enim. Officia accusantium saepe deleniti ipsum, nemo quisquam?</p> 
+                    <p class="home-description">Me enfoco en crear soluciones digitales, transformando ideas complejas en experiencias de usuario fluidas e intuitivas, siempre priorizando calidad, optimización y escalabilidad. ¡Estoy lista para darle vida a tu próximo proyecto!</p> 
                 </div> 
-                <div class="home-img-wrapper"> 
+                <div class="home-img-wrapper reveal-hidden"> 
                     <img src="img/ilustracion3dhome.png" alt="" class="home-img"> 
                 </div> 
                 <div class="home-social grid"> 
@@ -77,7 +79,7 @@
 
                     <!-- Project Card --> 
 
-                    <div class="project-card"> 
+                    <div class="project-card reveal-hidden"> 
                         <div class="project-info"> 
                             <h3 class="project-title">Atomic Asher Official Website</h3> 
                             <p class="project-description"> Sitio web moderno para una empresa digital, reflejando su equipo, misión y servicios con un diseño profesional y minimalista. </p> 
@@ -103,7 +105,7 @@
 
                     <!-- Otro Proyecto --> 
 
-                     <div class="project-card"> 
+                     <div class="project-card reveal-hidden"> 
                         <div class="project-info"> 
                             <h3 class="project-title">StopScams.in</h3> 
                             <p class="project-description"> Plataforma educativa que enseña sobre estafas digitales comunes y permite reportarlas en tiempo real. </p> 
@@ -132,7 +134,7 @@
 
         <!-- ===== Skills ===== --> 
          
-        <section class="skills section" id="skills"> 
+        <section class="skills section reveal-hidden" id="skills"> 
             <div class="container"> 
                 <h2 class="section-title"><span>&lt;/</span>Skills<span>&gt;</span></h2> 
                 <div class="skills-container container grid"> <div class="skillsgroup"> 
@@ -203,26 +205,37 @@
     
     <!-- ===== Sobre mi ===== --> 
 
-        <section class="sobre-mi section" id="about-me"> 
-        <div class="home-container container grid">
-            <div class="home-img-wrapper"> 
-            <img src="img/ilustracion3d.png" alt="" class="home-img"> 
-            </div> 
-            <div class="home-data"> 
-                <h2 class="section-title"><span>&lt;/</span>Sobre mí<span>&gt;</span></h2> 
-                <h3 class="home-job">Soy Desarrolladora Web</h3> 
-                <p class="home-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velitm corrupti nt accusamus, facilis ipsum enim. Officia accusantium saepe deleniti ipsum, nemo quisquam?</p> 
-                <p class="home-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velitm corrupti nt accusamus, facilis ipsum enim. Officia accusantium saepe deleniti ipsum, nemo quisquam?</p> 
-                <p class="home-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velitm corrupti nt accusamus, facilis ipsum enim. Officia accusantium saepe deleniti ipsum, nemo quisquam?</p> 
-            </div>
-            
-        </div>
+        <section class="sobre-mi section reveal-hidden" id="about-me">
+            <div class="container"> 
+                <h2 class="section-title about-title"><span>&lt;/</span>Sobre mí<span>&gt;</span></h2> 
         
-        </section>  
+                <div class="about-container grid">
+            
+                    <div class="about-img-wrapper reveal-hidden"> 
+                        <img src="img/ilustracion3d.png" alt="" class="home-img"> 
+                    </div> 
+            
+                    <div class="about-data reveal-hidden"> 
+                        <h3 class="home-job about-job">Desarrolladora Web</h3> 
+                        <p class="home-description about-description">
+                            ¡Un placer! Soy Melina Floriani, Desarrolladora Web en formación, oriunda de la Ciudad de Mendoza.
+                            Mi pasión por el código nació de mi naturaleza creativa: veo la programación como la herramienta perfecta para transformar ideas abstractas en soluciones digitales tangibles y funcionales.
+                            Como profesional, mi compromiso es con el crecimiento constante. 
+                            Estoy lista para construir, colaborar y llevar tu próximo proyecto al siguiente nivel.
+                        </p>
+                        <h3 class="home-job about-job">  • Educación</h3>
+                        <div class="education-wrapper">
+                            <img src="img/utn-logo.jpg" alt="" class="education-img"> 
+                            <h4 class="education-title">Tecnicatura Universitaria en Programación</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     
     <!-- ===== Contacto ===== --> 
      
-        <section class="contact section" id="contact"> 
+        <section class="contact section reveal-hidden" id="contact"> 
             <div class="contact-container"> 
                 <div class="contact-group"> 
                     <h2 class="section-title"><span>&lt;/</span>Contactame<span>&gt;</span></h2> 
