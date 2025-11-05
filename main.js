@@ -20,6 +20,11 @@ if(navClose){
   });
 }
 
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => link.addEventListener('click', () => {
+  navMenu.classList.remove('show-menu');
+}));
+
 
 /* email js */
 
